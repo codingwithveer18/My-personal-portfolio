@@ -1,46 +1,25 @@
 <?php
 $mongo= new MongoClient();
-$db=$mongo->
+$db=$mongo->local;
+$collection=$db->help;
+
 $errorMSG = "NOT FOUND";
-
-// NAME
-if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
-} else {
-    $name = $_POST["name"];
+{
+$insert= array(
+    name=>$_POST["name"],
+    email=>$_POST["email"],
+    mobile=>$_POST["mobile"],
+    Message=>$_POST["Message"],
+);
+if($collection->insert($insert))
+echo "Data is Inserted"
 }
-
-// EMAIL
-if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
-} else {
-    $email = $_POST["email"];
+else{
+    echo "ERROR"
 }
-
-// Mobile NO
-if (empty($_POST["mobile"])) {
-    $errorMSG .= "Number is required ";
-} else {
-    $guest = $_POST["Mobile"];
+else{
+    echo "No data is stored"
 }
-
-
-// MSG Event
-if (empty($_POST["event"])) {
-    $errorMSG .= "Subject is required ";
-} else {
-    $event = $_POST["event"];
-}
-
-
-// MESSAGE
-if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
-} else {
-    $message = $_POST["message"];
-}
-
-
 $EmailTo = "gaming.zone24680@gmail.com";
 $Subject = "New Message Received";
 

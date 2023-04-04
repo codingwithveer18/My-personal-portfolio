@@ -36,6 +36,7 @@ header {
   background: transparent;
   position: fixed;
   top: 0;
+  background-color: var(--main-header-background);
   transition: 0.3s;
   z-index: 5;
 }
@@ -49,7 +50,7 @@ header {
 }
 
 header:hover {
-  background-color: var(--main-header-background);
+  background-color: rgba(8, 144, 144, 0.741);
 }
 
 
@@ -106,7 +107,7 @@ a {
 }
 
 .intro p {
-  margin: 5px;
+  margin: 15px;
   font-size: 1.2rem;
   font-family: var(--main-font-family);
   text-align: center;
@@ -267,61 +268,33 @@ hr {
 ──────────────────*/
 
 @media only screen and (max-width: 1484px) and (min-width: 1214px) {
-	.work{
-        padding:20px 20%;
-    }
+  .work {
+    padding: 20px 5%;
+  }
 }
+
 @media only screen and (max-width: 1214px) and (min-width: 1000px) {
-	.work{
-        padding:20px 12%;
-    }
+  .work {
+    padding: 20px 12%;
+  }
 }
 
 
 @media only screen and (max-width: 500px) {
 
-	#home, #projects, #contact{
-        overflow-x: hidden;
-	}
-	header{
-		background-color: var(--main-header-background);
-	}
-	.logo{
-		position:absolute;
-		top: 2px;
-		left: 30px;
-	}
-	.nav-show{
-		opacity: 1;
-	}	 
-	.nav-bar{
-		position:fixed;
-		top: 0px;
-		right:0;
-		width:60%;
-		height: 100vh;
-		display:flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content:space-evenly;
-		background:var(--main-header-background);
-		transform:translatex(100%);
-		transition: transform 0.5s ease-in;
-		z-index: -1;
-	}
-	.hamburger{
-		position:absolute;
-		top: 17px;
-		right: 25%;
-		display: block;
-		cursor:pointer;
-		z-index: 5;
-	}	
-	.nav-bar li{
-		opacity:0;
-	}
-}
+  #home,
+  #projects,
+  #contact {
+    overflow-x: hidden;
+  }
 
-.nav-active{
-	transform:translatex(0%);
+  header {
+    background-color: var(--main-header-background);
+  }
+
+  .logo {
+    position: absolute;
+    top: 2px;
+    left: 30px;
+  }
 }
