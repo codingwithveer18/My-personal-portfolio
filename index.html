@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VEER YADAV</title>
-    <link rel="shortcut icon" href="Mylogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/Mylogo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -16,6 +16,7 @@
     <header>
         <a href="#container" class="head">HOME</a>
         <a href="#projects" class="head">PROJECTS</a>
+        <a href="#blogs" class="head">BLOGS</a>
         <a href="#contact" class="head">CONTACT</a>
     </header>
     <div id="container">
@@ -59,18 +60,50 @@
             </div>
         </div>
     </div>
+    <div id="blogs">
+        <h3>My Blogs
+            <hr>
+        </h3>
+        <p>Here are some of my Blogs</p>
+        <div class="work-box">
+            <div class="work">
+
+                <div class="card">
+                    <img class="work-img"
+                        src="/images/cloud.jpg">
+                    <a href="#" target="_blank">
+                        <div class="work-content">Google Cloud Arcade Program</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <img class="work-img"
+                        src="/images/js.png">
+                    <a href="#" target="_blank">
+                        <div class="work-content">About thw world of Javascript</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <img class="work-img"
+                        src="/images/yt.png">
+                    <a href="#" target="_blank">
+                        <div class="work-content">Getting Started with Youtube Channel</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="contact">
         <h3>Contact
             <hr>
         </h3>
         <form action="form.php" method="post">
-            <input type="text" placeholder="ENTER YOUR NAME" required="">
-            <input type="email" id="email" placeholder="ENTER YOUR EMAIL" required="">
-            <input type="number" id="mobile" placeholder="ENTER YOUR MOBILE NUMBER" required="">
-            <input type="text" id="Message" placeholder="ENTER YOUR MESSAGE" required="">
-            <button type="submit" id="submit">SUBMIT NOW</button>
-            <button type="reset">RESET NOW</button>
+            <input required type="text" name="name"placeholder="ENTER YOUR NAME">
+            <input required type="email" name="email" placeholder="ENTER YOUR EMAIL">
+            <input required type="number" name="mobile" placeholder="ENTER YOUR MOBILE NUMBER">
+            <input required type="text" name="Message" placeholder="ENTER YOUR MESSAGE">
+            <button required type="submit">SUBMIT NOW</button>
+            <button required type="reset">RESET NOW</button>
         </form>
         <p>Feel free to contact me on my social media.</p>
         <div class="social-media">

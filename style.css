@@ -131,7 +131,7 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--main-fonts-color);
+  color: wheat;
 }
 
 #projects h3 {
@@ -142,6 +142,43 @@ h3 {
   font-family: var(--main-font-family);
   font-size: 1.2rem;
   padding: 10px;
+}
+#blogs {
+  margin-top: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: wheat;
+}
+
+#blogs h3 {
+  padding-top: 70px;
+}
+
+#blogs p {
+  font-family: var(--main-font-family);
+  font-size: 1.2rem;
+  padding: 10px;
+}
+#blogs .card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 200px;
+  height: 250px;
+  border-radius: 12px;
+  background: rgb(14, 69, 71);
+}
+#blogs .card .work-content {
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-family: var(--main-font-family);
+  cursor: pointer;
 }
 
 .work {
@@ -284,6 +321,7 @@ hr {
 
   #home,
   #projects,
+  #blogs,
   #contact {
     overflow-x: hidden;
   }
